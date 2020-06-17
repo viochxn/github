@@ -1,0 +1,146 @@
+---
+title: "Exercises-intro-git-summer-2020"
+output: html_document
+---
+
+#Introduction to Workflow
+
+See git-cheat-sheet.pdf file in the repository.
+
+#Exercise 1 (Group)
+
+Together as a group, we'll go through a complete cycle of the github workflow to contribute to code. In this set, we'll create a new repository using a template, clone the repository, and make code contributions to it. (As we go through together, Ben will be "Person 1" and Jesse will be "Person 2".)
+
+```{r make a function to multiply by three}
+mult5 <- function(x){
+  return()
+}
+
+mult3(2) #Should return the value 10
+```
+
+#Setup (Breakout Room)
+1, Person 1's repository will be used for the remaining exercises. 
+2. Person 1 adds person 2 as an admin in their repository.
+3. Person 2 clones person 1's github repository, and using the git URL creates a new RStudio Cloud instance.
+4. Person 2 adds in their github credentials (sorry, not saved across instances!)
+
+#Exercise 2 (Breakout Room - person 1)
+
+Complete the function so that it adds the value five to a given input, x.
+Person 1 should make the change in code, and person 2 should manage the pull request.
+
+##Steps
+
+*Person 1:*
+
+1. Create new branch (top right corner, git tab, branch icon). Name the branch "Exercise-2". The defaults settings work.
+
+2. Complete the function below. Save your work.
+
+3. Stage - click box beside file name in the git window.
+
+4. Commit - Write a commit message that completes the statement "With this commit I"....
+
+5. Push - click the "up" arrow in the git tab to send your changes to the remote repository. You'll have to enter your github credentials. 
+
+6. In the GitHub repository, make a pull request for the change.
+
+*Person 2:*
+7. Person 2 manages the pull request, merges and closes it. (In actuality/real world, we'd test the code before closing the pull request.)
+
+*Both People*
+8. Pull the master branch back down to your local repository.
+
+```{r person one codes}
+add5 <- function(x){
+  return()
+}
+
+add5(10) # Should return the value 10
+```
+
+#Exercise 2 (Breakout Room - person 2)
+
+Follow the above steps, but now person 2 do steps 1 - 6 for the function below, and person 1 do step 7.  Person 2 should begin by first clicking Pull (down arrow) to update your local repository with the remote changes.
+
+Complete function so that it divides a given input, x, by the value 2.
+Person 2 should make the change in code, and person 1 should manage the pull request.
+```{r person two codes}
+
+div2 <- function(x){
+  return()
+}
+
+div2(20) # Should return the value 10
+```
+
+#Exercise 3 (Group)
+
+Now, we will go through the same steps again, but using the command line. Charreau will be "person 1" and "Ben will be person 2". 
+
+Complete the function so that it returns an input, x, to the power of 2. 
+
+```{r make function to square a value}
+power2 <- function(x){
+  return()
+}
+
+power2(5) #Should return 25
+```
+
+#Exercise 4 (Breakout Room - part 1)
+
+Complete the function so that it returns the square root of an input value, x.
+Person 1 should make the change in code, and person 2 should manage the pull request.
+
+*Person 1:*
+
+1. Create a new branch named "Exercise-4" using the following commands:
+git checkout -b exercise-4 
+git push -u origin exercise-4
+
+Check to see what branch you're on using: git branch
+Check the status of your git repository using: git status
+
+2. Complete the function below. Save your work.
+
+3. Stage changes using the following command:
+git add Exercise-intro-git-summer-2020.Rmd
+
+4. Commit - Write a commit message (replace 'commit_msg' in the command below) that completes the statement "With this commit I"... and execute the following command:
+git commit -m "commit_msg"
+
+5. Push - Send your changes to the remote repository using the following command.  You'll have to enter your github credentials:
+git push origin exercise-4
+
+6. In the GitHub repository, make a pull request for the change.
+
+*Person 2:*
+7. Person 2 manages the pull request, merges and closes it. (In actuality/real world, we'd test the code before closing the pull request.)
+
+*Both People*
+8. Pull the master branch back down to your local repository.
+
+```{r make function for square root of value}
+square_root <- function(x){
+  return()
+}
+
+square_root(144) #Should return the 12
+```
+
+#Exercise 4 (Breakout Room - part 2)
+Complete the function so that it returns the sum of a given input vector, x.
+Person 2 should make the change in code, and person 1 should manage the pull request.
+
+Follow the above steps, but now person 2 do steps 1 - 6 for the function below, and person 1 do step 7.  Person 2 should begin by first running the command:
+git pull origin master
+to update your local repository with the remote changes.
+```{r make function for sum of vector}
+sum_all <- function(x){
+  return()
+}
+
+sum_all(x = c(1,2,3)) #Should return 6
+```
