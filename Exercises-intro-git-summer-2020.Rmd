@@ -11,12 +11,12 @@ See git-cheat-sheet.pdf file in the repository.
 
 Together as a group, we'll go through a complete cycle of the github workflow to contribute to code. In this set, we'll create a new repository using a template, clone the repository, and make code contributions to it. (As we go through together, Ben will be "Person 1" and Jesse will be "Person 2".)
 
-```{r make a function to multiply by three}
+```{r make a function to multiply by five}
 mult5 <- function(x){
-  return()
+  return(x * 5)
 }
 
-mult3(2) #Should return the value 10
+mult5(2) #Should return the value 10
 ```
 
 #Setup (Breakout Room)
